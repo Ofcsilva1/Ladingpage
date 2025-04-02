@@ -248,7 +248,7 @@ nav ul li:hover {
     transform: translateY(30px);
   }
   100% {
-    opacity: 1;
+    opacity: 2;
     transform: translateY(0);
   }
 }
