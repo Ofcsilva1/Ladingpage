@@ -95,7 +95,7 @@ nav ul li:hover {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  animation: fadeInOut 7s infinite;
+  animation: fadeInOut 10s infinite;
 }
 .bg-image:nth-child(1) { animation-delay: 0s; }
 .bg-image:nth-child(2) { animation-delay: 4s; }
