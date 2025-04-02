@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Proteja - Parcerias e Folder Ajustado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons (opcional) -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+<body>
+  <!-- CABEÇALHO -->
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="Logo Proteja1.png" alt="Logo do Proteja" class="logo-img">
+    </div>
+    <nav>
+      <ul>
+        <li class="scroll-link" data-target="hero">Início</li>
+        <li class="scroll-link" data-target="sobre">Sobre</li>
+        <li class="scroll-link" data-target="parceria">Parcerias</li>
+        <li class="scroll-link" data-target="servicos">Serviços</li>
+        <li class="scroll-link" data-target="folder">Folder</li>
+        <li class="scroll-link" data-target="mapa">Localização</li>
+        <li class="scroll-link" data-target="contato">Contato</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="hero-gradient"></div>
+    <div class="bg-slideshow">
+      <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80');"></div>
+      <div class="bg-image" style="background-image: url('https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&q=80');"></div>
+    </div>
+    <div class="hero-content">
+      <div class="text-box">
+        <h1>PROTEJA</h1>
+        <p>Centro Estadual de Atendimento Integrado a Crianças e Adolescentes Vítimas de Violência</p>
+        <a href="#sobre" class="btn scroll-link" data-target="sobre">Saiba Mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SOBRE -->
+  <section id="sobre" class="section about-section">
+    <h2 class="section-title">Sobre o Proteja</h2>
+    <div class="about-content">
+      <p>
+        O Centro Estadual de Atendimento Integrado a Crianças e Adolescentes Vítimas de Violência – PROTEJA é uma iniciativa prioritária do Governo da Bahia. O Proteja se constitui em um equipamento que reúne serviços voltados à proteção e ao atendimento de crianças e adolescentes vítimas de violência, por meio de equipes multidisciplinares especializadas.
+O Proteja está estruturado para assegurar as condições técnico-operacionais adequadas ao atendimento e possibilitar que as vítimas sejam acolhidas e protegidas em um ambiente compatível com suas necessidades, características e particularidades. O compromisso é a interrupção da violência, com acolhimento, escuta, atendimento multidisciplinar  especializado integrado à rede de proteção infantojuvenil.
+      </p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO PARCERIAS -->
+  <section id="parceria" class="section partnership-section">
+    <h2 class="section-title">Nossas Parcerias</h2>
+    <div class="partners-grid">
+      <!-- Parceiro 1: Governo do Estado (clicável com label) -->
+      <div class="partner">
+        <a href="https://www.sjdh.ba.gov.br/" target="_blank">
+          <img src="SJDH.png" alt="Governo do Estado da Bahia">
+          <span class="click-label">Clique para saber mais</span>
+        </a>
+      </div>
+      <!-- Parceiro 2: Respeito é Nosso (não clicável) -->
+      <div class="partner">
+        <img src="RESPEITONOSSO.png" alt="Respeito é Nosso Direito">
+      </div>
+      <!-- Parceiro 3: Humana Brasil (clicável com label) -->
+      <div class="partner">
+        <a href="https://www.humanabrasil.org/" target="_blank">
+          <img src="Humana.png" alt="Humana Brasil">
+          <span class="click-label">Clique para saber mais</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO SERVIÇOS -->
+  <section id="servicos" class="section services-section">
+    <h2 class="section-title">Nossos Serviços</h2>
+    <div class="services-grid">
+      <div class="service-box social fade-up">
+        <i data-lucide="users" class="service-icon"></i>
+        <h3>Atendimento Social</h3>
+        <p>Acompanhamento e suporte às famílias</p>
+      </div>
+      <div class="service-box psico fade-up">
+        <i data-lucide="heart" class="service-icon"></i>
+        <h3>Atendimento Psicológico</h3>
+        <p>Suporte emocional especializado</p>
+      </div>
+      <div class="service-box juridico fade-up">
+        <i data-lucide="scale" class="service-icon"></i>
+        <h3>Atendimento Jurídico</h3>
+        <p>Orientação e acompanhamento legal</p>
+      </div>
+      <div class="service-box integrado fade-up">
+        <i data-lucide="shield" class="service-icon"></i>
+        <h3>Acompanhamento Integrado</h3>
+        <p>Articulação com a rede de proteção</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO FOLDER -->
+  <section id="folder" class="section folder-section">
+    <h2 class="section-title">Folder</h2>
+    <div class="folder-grid">
+      <div class="folder-item">
+        <img src="Folder1.png" alt="Folder 1">
+      </div>
+      <div class="folder-item">
+        <img src="Folder2.png" alt="Folder 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO MAPA -->
+  <section id="mapa" class="section">
+    <h2 class="section-title">Localização</h2>
+    <div class="map-box">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.8877431388857!2d-38.5065407!3d-12.974115399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71605c38f305821%3A0xe533a388ccf93530!2sProteja%20-%20Centro%20Estadual%20de%20Atendimento%20Integrado%20a%20Crian%C3%A7as%20e%20Adolescentes%20V%C3%ADtimas%20de%20Viol%C3%AAncia!5e0!3m2!1spt-BR!2sbr!4v1690000000000!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="600"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- SEÇÃO CONTATO -->
+  <section id="contato" class="section contact-section">
+    <h2 class="section-title">Contato</h2>
+    <div class="contact-info">
+      <p>
+        <strong>Telefone:</strong>
+        <a href="https://wa.me/557196940507" target="_blank">+55 71 99694-0507</a>
+      </p>
+      <p>
+        <strong>Instagram:</strong>
+        <a href="https://instagram.com/protejabahia" target="_blank">@protejabahia</a>
+      </p>
+      <p>
+        <strong>Endereço:</strong>
+        <a href="https://www.google.com/maps/place/Proteja+-+Centro+Estadual+de+Atendimento+Integrado+a+Crian%C3%A7as+e+Adolescentes+V%C3%ADtimas+de+Viol%C3%AAncia/@-12.9741154,-38.5065407,17z/data=!3m1!4b1!4m6!3m5!1s0x71605c38f305821:0xe533a388ccf93530!8m2!3d-12.9741154!4d-38.5039658!16s%2Fg%2F11x2jqnnqz!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Rua Américo de Souza Gomes, 2 - Saúde - Nazaré<br>
+          Salvador - BA, 40045-030
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Proteja - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="Script.js"></script>
+</body>
+</html>
