@@ -21,6 +21,14 @@ Nexora, serviços, campanha, unidades, horários e endereços são fictícios. O
 
 ## Validação
 
+### Regressão automatizada
+
+Use Node 22, `npm ci --ignore-scripts`, `npm run check`, `npx --no-install playwright install chromium` e `npm test`. Se já houver Edge/Chromium instalado, `NEXORA_BROWSER_PATH` pode apontar para seu executável. A instalação é necessária só para testes; o site continua estático, sem build ou backend.
+
+A suíte cobre mapa, contato, carrossel manual, menu móvel/Escape/foco, animação/pausa do globo, movimento reduzido e conteúdo sem JavaScript. Requests externos são bloqueados; não há envio de contato. O workflow Quality tem apenas permissão de leitura, actions fixadas e não faz deploy. A execução hospedada depende de publicação posterior autorizada. `check` verifica sintaxe, sem alegar lint ou typecheck inexistentes.
+
+### Histórico da revisão visual
+
 Verificação em Edge com larguras de 320, 390, 760, 768, 1024 e 1440 pixels, sem transbordamento horizontal. Conferidos os links internos, as três unidades do mapa, abertura/fechamento do contato, menu móvel e Escape, movimento reduzido, conteúdo sem JavaScript e ausência de erros de execução. Apresentação inspecionada em capturas de desktop e celular.
 
 A revisão também verifica que o canvas muda entre quadros, congela ao pausar e respeita movimento reduzido; os controles do carrossel percorrem os três slides nas duas direções; a fotografia local carrega corretamente.
